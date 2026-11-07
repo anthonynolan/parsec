@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Parsec — TI-99/4A style scroller</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <h1>PARSEC <span class="sub">TI-99/4A style scroller</span></h1>
+  <div class="cabinet">
+    <div class="stage" id="stage">
+      <canvas id="game" width="960" height="540" aria-label="Parsec clone playfield"></canvas>
+    </div>
+    <div class="touchbar">
+      <button id="btnFire" type="button">FIRE</button>
+      <button id="btnStart" type="button">LAUNCH / RESTART</button>
+      <button id="btnPause" type="button">PAUSE</button>
+      <button id="btnFull" type="button">FULLSCREEN</button>
+    </div>
+  </div>
+  <p class="help">
+    Move: <b>Arrows / WASD</b> &nbsp; Fire: <b>Space / Z</b> &nbsp; Start: <b>Enter</b> &nbsp;
+    Pause: <b>P</b> &nbsp; Mute: <b>M</b> &nbsp; Touch: drag on the screen to steer, FIRE button to shoot.
+    Gamepad: left stick / D-pad steers, <b>A</b> / <b>RT</b> fires, any button launches, <b>Start</b> pauses.
+    Shoot red fuel pods for +fuel. Don't hit the ground. Top 10 scores are saved on this machine.
+  </p>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
