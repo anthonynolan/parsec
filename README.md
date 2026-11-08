@@ -3,6 +3,9 @@
 A tiny collection of browser games. Open the home page, pick a cabinet, and play.
 New games will appear on the home page as they are added.
 
+**Play online:** [https://anthonynolan.github.io/parsec/](https://anthonynolan.github.io/parsec/)
+(requires GitHub Pages to be enabled for the repo — see below).
+
 **Games so far:** [Parsec](parsec-game/) — a TI-99/4A style scrolling shooter.
 
 ## Screenshots (Parsec)
@@ -30,7 +33,11 @@ cd parsec
 
 ## Play
 
-Serve the folder and open it in a browser:
+The easiest way is the hosted site linked at the top. To enable it: push this
+repo to GitHub, then set **Settings → Pages → Source** to **GitHub Actions**.
+The included workflow deploys on every push to `master`.
+
+Or serve the folder locally and open it in a browser:
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
