@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arcade — Home</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="masthead">
+    <h1>ARCADE</h1>
+    <p class="tagline">Pick a cabinet. More games coming soon.</p>
+  </header>
+
+  <section class="grid" id="games" aria-label="Games"></section>
+
+  <p class="hint" id="hint" hidden></p>
+</main>
+<script>
+// To add a game: copy one entry below. `href` points at the game's folder or page.
+const GAMES = [
+  {
+    title: "Parsec",
+    href: "parsec-game/",
+    blurb: "TI-99/4A style scroller. Dodge terrain, shoot fuel pods, chase the high score.",
+    controls: "Arrows / WASD · Space fires",
+    badge: "Playable"
+  }
+  // { title: "Next game", href: "next-game/", blurb: "...", controls: "...", badge: "Playable" },
+];
+
+const grid = document.getElementById("games");
+const hint = document.getElementById("hint");
+
+GAMES.forEach((g) => {
+  const card = document.createElement("a");
+  card.className = "card";
+  card.href = g.href;
+
+  const badge = document.createElement("span");
+  badge.className = "badge";
+  badge.textContent = g.badge || "Playable";
+
+  const title = document.createElement("h2");
+  title.textContent = g.title;
+
+  const blurb = document.createElement("p");
+  blurb.className = "blurb";
+  blurb.textContent = g.blurb;
+
+  const meta = document.createElement("p");
+  meta.className = "meta";
+  meta.textContent = g.controls || "";
+
+  const play = document.createElement("span");
+  play.className = "play";
+  play.textContent = "Play →";
+
+  card.append(badge, title, blurb, meta, play);
+  grid.appendChild(card);
+});
+
+if (GAMES.length <= 1) {
+  hint.hidden = false;
+  hint.textContent = "Parsec is the only cabinet for now — new games will appear here as they are added.";
+}
+</script>
+</body>
+</html>

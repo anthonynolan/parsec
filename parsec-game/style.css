@@ -35,6 +35,9 @@ h1 {
   color: var(--accent);
   text-shadow: 0 0 18px rgba(255, 210, 63, 0.35);
 }
+.back { margin: 0 0 8px; font-size: 12px; letter-spacing: 2px; }
+.back a { color: var(--dim); text-decoration: none; }
+.back a:hover { color: var(--accent); }
 h1 .sub {
   display: block;
   font-size: 11px;
