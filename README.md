@@ -7,6 +7,7 @@ New games will appear on the home page as they are added.
 (requires GitHub Pages to be enabled for the repo — see below).
 
 **Games so far:** [Parsec](parsec-game/) — a TI-99/4A style scrolling shooter.
+[Sprint](sprint-game/) — a Super Sprint style top-down racer (3 laps, you + 3 AI cars).
 
 ## Screenshots (Parsec)
 
@@ -57,8 +58,25 @@ then open `http://127.0.0.1:8000/` and click **Parsec**.
 | Mute | M |
 | Full screen | FULLSCREEN button |
 
-### Goal
+### Goal (Parsec)
 
 Destroy the enemy saucers, keep an eye on your fuel gauge, and don't hit the
 ground. Shoot the red fuel pods for extra fuel. Your top 10 scores are saved on
 your machine.
+
+### Sprint
+
+Top-down arcade racing like Super Sprint: you (yellow) against 3 AI cars over
+3 laps on a single-screen circuit.
+
+| Action | Input |
+| --- | --- |
+| Gas / brake | Up / Down or W / S (gamepad A / RT, B / LT, or the GAS / BRK buttons) |
+| Steer | Left / Right or A / D (left stick, or the ◀ / ▶ buttons) |
+| Start / restart | Enter (tap the track on touch screens) |
+| Pause | P |
+| Mute | M |
+
+Hit the blue turbo arrows for a boost, avoid the black oil slicks (they spin
+you out), and grab wrenches for +100 and a small boost. Walls slow you down.
+Best lap, best race, and win count are saved on your machine.

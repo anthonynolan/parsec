@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Sprint — top-down arcade racer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <p class="back"><a href="../">&larr; ALL GAMES</a></p>
+  <h1>SPRINT <span class="sub">top-down arcade racer · like Super Sprint</span></h1>
+  <div class="cabinet">
+    <div class="stage" id="stage">
+      <canvas id="game" width="960" height="540" aria-label="Sprint top-down racing playfield"></canvas>
+    </div>
+    <div class="touchbar">
+      <button id="btnLeft" type="button">◀</button>
+      <button id="btnRight" type="button">▶</button>
+      <button id="btnGas" type="button">GAS</button>
+      <button id="btnBrake" type="button">BRK</button>
+      <button id="btnStart" type="button">START</button>
+      <button id="btnFull" type="button">FULLSCREEN</button>
+    </div>
+  </div>
+  <p class="help">
+    Steer: <b>Arrows / WASD</b> &nbsp; Gas: <b>Up / W</b> &nbsp; Brake: <b>Down / S</b> &nbsp;
+    Start: <b>Enter</b> &nbsp; Pause: <b>P</b> &nbsp; Mute: <b>M</b> &nbsp;
+    Gamepad: left stick steers, <b>A / RT</b> gas, <b>B / LT</b> brake.
+    Touch: hold <b>GAS</b> + <b>◀ ▶</b>. 3 laps, 4 cars — grab turbos, dodge oil!
+  </p>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
